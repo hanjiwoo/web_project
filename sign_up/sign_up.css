@@ -1,0 +1,67 @@
+#overlap_c{
+	width: 100px;
+	height: 30px;
+	border-radius : 10%;
+	color: #ffffff ;
+	background-color: #4078c0 ;
+	margin-top: 30px;
+}
+
+.cent{
+	text-align: center;	
+}
+
+.button{
+	text-align: center;	
+}
+
+#signup_submit{
+	width: 100px;
+	height: 30px;
+	border-radius : 10%;
+	
+	color: #ffffff ;
+	background-color: #4078c0 ;
+	margin-top: 30px;
+
+}
+
+form{
+	font-size: 20px;
+}
+
+input{
+	width: 300px;
+	height: 20px;
+	font-size: 15px;
+}
+
+#cid{
+	margin-left: 457px;
+}
+
+#name{
+	margin-left: 70px;
+}
+#id{
+	margin-left: 106px;
+}
+
+#pw{
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+#pw_c{
+	margin-left: 27px;
+}
+#birth{
+	margin-top: 30px;
+	margin-left: 27px;
+}
+
+#nick{
+	margin-left: 25px;
+}
+
+
