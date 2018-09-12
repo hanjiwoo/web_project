@@ -1,23 +1,22 @@
 <?php
-    $host='localhost';
-    $user='root';
-    $user_pwd=2464;
-    $dbName='web_test';
+    include "./dbconnect.php";
+    header("Content-Type: application/json");
 
-    $id=$_POST['id_check'];
-    
-    $mysqli=new mysqli("$host","$user",$user_pwd,"$dbName");
+    $id = $_POST['id'];
 
+    if(!$id){
+        throw new exception('id 값이 없습니다.');
+    }
     $result=mysqli_query($mysqli,"SELECT count(*) FROM user_info WHERE user_id='$id'");
 
-    $row=mysqli_fetch_array($result);
-?>
-<script>
-    var row="<?=$row[0]?>";
-    if(row==1){
-        alert("이미 사용중인 아이디입니다.");
+    $rows=mysqli_fetch_array($result);
+
+    if($rows[0]==0) {
+        $data = array('text'=>'good');
+        echo json_encode($data);
     }
     else{
-        alert("사용 가능한 아이디입니다.");
+        $data = array('text'=>'bad');
+        echo json_encode($data);
     }
-</script>
+?>
