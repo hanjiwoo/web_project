@@ -12,10 +12,11 @@
     VALUES('$name','$id','$pwd','$nick','$birth')");
     if($signup)
     {
-        echo("<script>location.replace('./index.php');</script>");
+        header("location:http://www.login.fbclub.com");
     }
     else
     {
-        echo "sigh up failed";
+        header("location:http://www.signup.fbclub.com");
+        echo("<script>alter('login failed');</script>");
     }
 ?>
