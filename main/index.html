@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>No home</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css?ver=2">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css'>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+  </head>
+  <body>
+    <body class>
+      <!-- header -->
+      <header id="header">
+        <div class="headdiv">
+          <li><a href="login.html">LOGIN</a></li>
+          <span> | </span>
+          <li><a href="#">MYPAGE</a></li>
+        </div>
+        <div class='logo'><a href="index.html"><img src="images/logo.png" alt="로고"/></a></div>
+      </header>
+      <!-- top -->
+      <nav id="menu">
+        <ul class="links">
+          <li><a href="notice.html">MAIN</a></li>
+          <li><a href="plan.html">ABOUT</a></li>
+          <li><a href="member.html">NOTICE</a></li>
+          <li><a href="snacks.html">SNACKS</a></li>
+        </ul>
+      </nav>
+      <!--Banner  -->
+      <section id="banner">
+        <div class="plan">
+          <div class="star"><i class="fas fa-star-of-life"></i></div>
+          <div class="today">
+              <ul class="date">
+                <li><script>
+                      var day = new Date();
+                      var month = day.getMonth()+1;
+                      document.write(month)
+                    </script></li>
+                <li class=special><script>
+                      var day = new Date();
+                      var date = day.getDate();
+                      document.write(date)
+                    </script></li>
+                <li><script>
+                      var day = new Date();
+                      var week = new Array('MON','TUE','WED','THU','FRI','SAT','SUN');
+                      var today = day.getDay();
+                      var todaylabel = week[today];
+                      document.write(todaylabel)
+                    </script></li>
+              </ul>
+          </div>
+          <div class="week">
+            <h1>주간 일정</h1>
+            <div class="weekplan">
+              <ul class="weekplans">
+                <li>금요일 전에 끝난 것 같당</li>
+                <li>기분 째져</li>
+                <li>룰루루루루ㅜ룰ㄹ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="info">
+        <div class="star"><i class="fas fa-star-of-life"></i></div>
+        <div class="information">
+        <h1>Flos Via는?</h1>
+        <div class="flosvia"><img src="images/just.jpg" alt="대표이미지"/></div>
+        <div class="intro">
+            <li>그냥 동물 농장 입니다.<br>
+            약간 제정신이 아닌 친구들이 많은,<br>
+            아 참고로 판다는 제정신!!</li>
+        </div>
+      </div>
+    </div>
+      <!-- Footer -->
+      <footer id = footer>
+      <div class = "icon">
+        <ul class = "icons">
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href=""><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://github.com/FLOSVIA"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+          <li>&copy; Untitled. All rights reserved. | Made by FLOSVIA</li>
+      </div>
+      </footer>
+  </body>
+</html>
