@@ -22,11 +22,11 @@
 <script>
     var check=<?=$check?>;  
     if(check>0){
-        alert("로그인에 성공했습니다");
+        alert("로그인에 성공했습니다.");
         location.replace("./test.html");
     }  
     else {
-        alert("로그인에 실패했습니다");
+        alert("로그인에 실패했습니다.");
         location.replace("./index.html");
     }
 </script>
