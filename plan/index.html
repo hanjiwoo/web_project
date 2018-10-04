@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/fullcalendar.css"/>
+        <link href='./css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+        <link rel="stylesheet" type="text/css" href="./css/plan.css?ver=2"/>
+        <script src="./lib/jquery.min.js"></script>
+        <script src="./lib/moment.min.js"></script>
+        <script src="./js/fullcalendar.js"></script>
+        <script src="./js/plan.js"></script>
+        <script src="./js/action.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>plan</title>
+    </head>
+    <body>
+        <!-- <div id="extra" > 
+            <button id="add_plan" class="add_plan">add plan</button>
+        </div> -->
+        <div id="calendar" class="fc fc-unthmed fc-ltr">
+            <!-- <div id="fc-toolbar fc-header-toolbar"></div>
+            <div id="fc-view-container" ></div> -->
+        </div>
+
+        <div id="fcModal" class="modal fade" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> 
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">plan modify</h4>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" id="title" name="plan_title" placeholder="plan title">
+                        <input type="text" id="sdate" name="plan_sDate" placeholder="start date (YYYY-MM-DD)">
+                        <input type="text" id="edate" name="plan_eDate" placeholder="end date (YYYY-MM-DD)">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" onclick="modifyPlan()">수정</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
