@@ -1,13 +1,15 @@
 $(document).ready(function() {
     $('#calendar').fullCalendar({
         header:{
-            center:'addEvent'
+            left:'prev,next,today',
+            center:'title',
+            right:'addEvent',
         },
         defaultDate: '2018-10-01',
         editable: true,
         eventLimit: true, // allow "more" link when too many events
         height: 620,
-        
+        events: './load.php',
         customButtons:{
             addEvent:{
                 text:'add event',
@@ -24,10 +26,8 @@ $(document).ready(function() {
                 }
             }
         },
-        eventClick:function(event,calEvent,jsEvent,view){
-            $("#fcModal").modal();
-
-            // clickEvent();
+        eventClick:function(event){
+            
         }
     });
 })
