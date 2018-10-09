@@ -3,13 +3,15 @@
     <head>
         <title>sign up</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./sign_up.css">
+
         <script type="text/javascript">
             function check_pw(){
                 // var pw = document.getElementById("pw").value;
                 // var pw_c = document.getElementById("pw_c").value;
                 
                 if(document.getElementById("pw").value != document.getElementById("pw_c").value){
-                    document.getElementById('pw_check').innerHTML = '비밀번호가 틀렸습니다. 다시 입력해 주세요';
+                    document.getElementById('pw_check').innerHTML = '비밀번호가 틀렸습니다. 다시 입력해 주세요'; 
                 }
                 else document.getElementById('pw_check').innerHTML = '';
             }
@@ -63,10 +65,10 @@
             </div>
             <div>
                 <label for="id"> PASSWORD </label>
-                <input type="password" name="pwd" id="pw" placeholder="패스워드를 입력하세요" onchange="check_pw()"/>
+                <input type="password" name="pwd" id="pw" placeholder="패스워드를 입력하세요"# onchange="check_pw()"/>
             </div>
             <div>
-                <label for="id"> PASSWORD COMFIRM </label>
+                <label for="id"> PW CHECK</label>
                 <input type="password" name="pwd_c" id="pw_c" placeholder="다시 한번 입력하세요" onchange="check_pw()"/>
                 <p id="pw_check"></p>
             </div>
@@ -79,7 +81,7 @@
                 <input type="text" name="birth" id="birth" size="25" placeholder="6자리로 입력하세요 ex)010101 "/>
             </div>
             <div class="button">
-               <input type=submit value="submit"> 
+               <input type=submit value="submit" id="signup_submit"> 
             </div>
         </form>
     </body>
