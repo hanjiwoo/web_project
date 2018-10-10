@@ -1,0 +1,8 @@
+1) KoPub 돋움체 적용하는 방법 : https://github.com/SquarableCat/KoPubDotum-Webfont
+
+
+2) Font Awsome (아이콘) 사용하는 방법 : 
+- HTML 문서 내의 <head></head> 태그 안에 아래 코드 삽입
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+참고 : https://junistory.blogspot.com/2017/08/font-awesome.html
