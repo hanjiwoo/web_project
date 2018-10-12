@@ -5,8 +5,4 @@
     $dbName='web_test';
 
     $mysqli=new mysqli("$host","$user",$user_pwd,"$dbName");
-
-    
-
-
 ?>
