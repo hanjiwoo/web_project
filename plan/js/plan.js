@@ -27,7 +27,21 @@ $(document).ready(function() {
             }
         },
         eventClick:function(event){
-            
+            if(confirm("remove?"))
+            {
+                var id=event.id;
+                $.ajax({
+                    
+                    url:"delete.php",
+                    type:"POST",
+                    data:{id:id},
+
+                    success:function(){
+                        calendar.fullCalendar('refetchEvents');
+                        alert("Event removed");
+                    }
+                })
+            }
         }
     });
 })
