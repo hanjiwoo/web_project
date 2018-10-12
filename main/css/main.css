@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
+/* header */
+#header{
+  height: 150px;
+}
+#header .headdiv{
+  height: 35px;
+  width: 150px;
+  float: right;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #b7b7b7;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+#header .headdiv li, span{
+  list-style: none;
+  padding-left: 16px;
+  padding-top: 5px;
+  float: left;
+  color: #b7b7b7;
+}
+#header .headdiv li a{
+  text-decoration: none;
+  color:  #b7b7b7;
+  font-size: 12px;
+  font-family: "KoPub Dotum";
+}
+#header .headdiv li a:hover{
+  color: #000000;
+}
+
+#header .logo img{
+  height: 110px;
+  weight: auto;
+  margin-top: 25px;
+  margin-left: 41.5%;
+}
+
+/*menu*/
+#menu {
+  margin-left: 21.5%;
+}
+#menu .links{
+  height: 30px;
+  width: 70%;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #e73b63;
+  background-color: #e73b63;
+  text-decoration: none;
+}
+
+#menu .links li{
+  float: left;
+  width: 30px;
+  padding-left: 15%;
+  padding-top: 5px;
+}
+
+#menu .links li a{
+  text-decoration: none;
+  color: white;
+  font-family: "KoPub Dotum";
+}
+#menu .links li a:hover {
+  color: #000000;
+}
+
+/*star*/
+#banner .plan .star .fa-star-of-life {
+  color: #b7b7b7;
+  height: 100px;
+  margin-left: 36.5%;
+  margin-top: 90px;
+}
+/*plan*/
+#banner .plan .today, #banner .week {
+  float: left;
+  }
+#banner .plan{
+  margin-left: 22.5%;
+}
+#banner .plan .today {
+  width: 210px;
+  margin-right: 0;
+}
+#banner .plan .today .date {
+  border-radius: 35%;
+  height: 160px;
+  width: 125px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  background-color: #e73b63;
+}
+#banner .plan .today .date li{
+   padding-right: 31%;
+   padding-top: 7%;
+   color: white;
+   font-family: 'M PLUS Rounded 1c', sans-serif;
+   font-size: 25px;
+}
+#banner .plan .today .date .special{
+  font-size: 50px;
+  font-weight:bolder;
+}
+#banner .plan .week .weekplan{
+  height: 130px;
+  width: 50px;
+  margin-right: 0;
+}
+#banner .plan .week h1{
+  width: 150px;
+  margin-right: 0;
+  color: #e73b63;
+  font-family:"KoPub Dotum";
+  font-size: 30px;
+  font-style: bold;
+}
+#banner .plan .week .weekplan .weekplans{
+  list-style: circle;
+  text-align: left;
+}
+#banner .plan .week .weekplan .weekplans li{
+  font-family: "KoPub Dotum";
+  font-size: 18px;
+}
+
+/*info*/
+#info .fa-star-of-life {
+  color : #b7b7b7;
+  margin-bottom: 40px;
+}
+#info {
+  height: 550px;
+  margin-top: 20%;
+  text-align: center;
+}
+#info .information h1{
+  padding-left: 25%;
+  text-align: left;
+  color: #e73b63;
+  font-family:"KoPub Dotum";
+  font-size: 30px;
+  font-style: bolder;
+}
+#info .information .flosvia img{
+  width: 50%;
+  height: 250px;
+}
+#info .information .intro{
+  margin-top: 7px;
+  margin-left: 25%;
+  height: 150px;
+  width: 50%;
+}
+#info .information .intro li{
+  text-align: left;
+  list-style: none;
+  color : #000;
+  font-size: 18px;
+  font-family:"KoPub Dotum";
+}
+
+/* footer */
+
+#footer {
+  margin: 0 auto;
+  width: 400px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  width: 350px;
+}
+
+.icon .icons li a{
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  width: 33.3%;
+}
+
+.fa-twitter {
+  font-size: 25px;
+  color: #1da1f2;
+}
+.fa-facebook {
+  font-size: 25px;
+  color: #3b5998;
+}
+.fa-github {
+  font-size: 25px;
+  color: #333;
+}
+
+.copyright li{
+  font-weight: bold;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  font-size: 15px;
+}
