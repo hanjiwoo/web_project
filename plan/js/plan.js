@@ -31,7 +31,7 @@ $(document).ready(function() {
           {
               var id=event.id;
               $.ajax({
-                  url:"./delete.php",
+                  url:"delete.php",
                   type:"POST",
                   data:{id:id},
 
