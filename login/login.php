@@ -15,12 +15,12 @@
         $rows=mysqli_fetch_array($login);
 
         if($rows){
-            setcookie("user_id",$id,time()+84600,"/",".fbclub.com");
-            echo("<script language='javascript'>alert('로그인에 성공했습니다.');location.replace('http://www.main.fbclub.com');</script>");
+            setcookie("user_id",$id,time()+84600,"/");
+            echo("<script language='javascript'>alert('로그인에 성공했습니다.');location.href='../main/index.html';</script>");
             // echo("<script language='javascrip'>location.replace('http://www.main.fbclub.com');</script>");
         }
         else{
-            echo("<script language='javascript'>alert('로그인에 실패했습니다.');location.replace('http://www.login.fbclub.com');</script>");
+            echo("<script language='javascript'>alert('로그인에 실패했습니다.');location.href='./index.html';</script>");
             // echo("<script language='javascrip'>location.replace('http://www.login.fbclub.com');</script>");
         }
         // while($rows=mysqli_fetch_array($login)){
