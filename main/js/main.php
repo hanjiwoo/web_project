@@ -1,4 +1,6 @@
 <?php
+    header("Content-Type: application/json");
+
     if(isset($_COOKIE["user_id"])){
         $data = array('text'=>'good');
         echo json_encode($data);

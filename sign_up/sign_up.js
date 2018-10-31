@@ -43,7 +43,8 @@ function check_id(){
                 datatype : "json",
 
                 success:function(data){
-                    if(data['text']=="good"){
+                    console.log(data['text']);
+		    if(data['text']=="good"){
                         document.getElementById('id_check').innerHTML='<p style="color:green;">사용가능한 아이디 입니다.</p>';
                     }
                     else if(data['text']=="bad"){

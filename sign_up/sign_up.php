@@ -12,7 +12,7 @@
     VALUES('$name','$id','$pwd','$nick','$birth')");
     if($signup)
     {
-        header("location:http://www.login.fbclub.com");
+       	echo("<script language='javascript'>location.href='../login/index.html';</script>");
     }
     else
     {
