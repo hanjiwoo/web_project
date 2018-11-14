@@ -12,11 +12,11 @@
     VALUES('$name','$id','$pwd','$nick','$birth')");
     if($signup)
     {
-       	echo("<script language='javascript'>location.href='../login/index.html';</script>");
+       	echo("<script language='javascript'>alert('login succeed');location.href='../login/index.html';</script>");
     }
     else
     {
         header("location:http://www.signup.fbclub.com");
-        echo("<script>alter('login failed');</script>");
+        echo("<script>alert('login failed');</script>");
     }
 ?>
