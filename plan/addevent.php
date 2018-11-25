@@ -1,5 +1,5 @@
 <?php
-    include "./dbconnect.php";
+    include "../dbconnect.php";
 
     $title = $_POST['title'];
     $start = $_POST['start'];
