@@ -1,5 +1,5 @@
 <?php
-    include "./dbconnect.php";
+    include "../dbconnect.php";
     header("Content-Type: application/json");
 
     $id = $_POST['id'];
