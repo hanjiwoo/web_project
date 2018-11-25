@@ -1,5 +1,5 @@
 <?php
-    include './dbconnect.php';
+    include '../dbconnect.php';
 
     $id=$_POST['id'];
     $pwd=$_POST['password'];
